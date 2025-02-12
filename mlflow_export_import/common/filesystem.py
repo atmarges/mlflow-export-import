@@ -7,11 +7,11 @@ import shutil
 
 
 def mk_dbfs_path(path):
-    return path.replace("/dbfs","dbfs:")
+    return path.replace("/dbfs","dbfs:",1)
 
 
 def mk_local_path(path):
-    return path.replace("dbfs:","/dbfs")
+    return path.replace("dbfs:","/dbfs",1)
 
 
 def exists(path):
